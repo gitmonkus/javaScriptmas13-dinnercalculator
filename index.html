@@ -1,0 +1,103 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+        <button id="play-jingle" class="close play-jingle">Play Jingle</button>
+        <h1>Christmas Dinner Calculator</h1>
+        <p class="result" id="result">Your ideal Christmas dinner is > <span id="food">...</span></p>
+        <form>
+            <label for="name">How many guests are coming?</label>
+            <input id="num-input" type="number" id="guests" name="guests">
+            <div class="veggie">
+                <input type="checkbox" id="vegetarian-input" name="vegetarian">
+                <label for="name">Vegetarian?</label>            
+            </div>
+            <button id="btn" type="button">Calculate</button>
+        </form>
+        </div>
+        
+        <!-- RECIPE -->
+        
+        <div id="turkey-hid" class="container hidden">
+            <button id="tclose" class="close">X</button>
+            <h2> Delicious Turkey </h2>
+            <p>3 1/2 cups Swanson® Chicken Stock or Unsalted Chicken Stock</p>
+                <p>3 tablespoons lemon juice</p>
+                <p>1 teaspoon dried basil leaves, crushed</p>
+                <p>1 teaspoon dried thyme, crushed</p>
+                <p>1/4 teaspoon ground black pepper</p>
+                <p>1 stalk celery, coarsely chopped (about 1/2 cup)</p>
+                <p>1 small onion, coarsely chopped (about 1/4 cup)</p>
+                <p>1/2 cup sliced mushrooms (about 1 1/2 ounces)</p>
+                <p>4 cups Pepperidge Farm® Herb Seasoned Stuffing</p>
+                <p>12 pounds turkey (1 turkey)</p>
+        </div>
+        <div id="nut-hid" class="container hidden">
+            <button id="nclose" class="close">X</button>
+            <h2> Delicious Nut Roast </h2>
+            <p>50g of butter</p>
+            <p>1 red onion, diced</p>
+            <p>1/2 leek, sliced</p>
+            <p>1 carrot, cut into 5mm dice</p>
+            <p>3 garlic cloves, finely sliced</p>
+            <p>2 black garlic cloves, mashed to a paste</p>
+            <p>100g of chestnut mushrooms, chopped</p>
+            <p>100g of puy lentils, cooked</p>
+            <p>180g of vacuum packed cooked chestnuts, roughly chopped</p>
+            <p>100g of mixed nuts, chopped</p>
+            <p>30g of dried cranberries, or apricots, chopped</p>
+            <p>100g of brown bread, torn into small pieces</p>
+            <p>150g of vegetable stock</p>
+            <p>1 orange, zested</p>
+            <p>nutmeg, to taste</p>
+            <p>1 tbsp of rosemary, finely chopped</p>
+            <p>1 tbsp of thyme leaves</p>
+            <p>2 eggs, beaten</p>
+            <p>salt</p>
+            <p>pepper</p>
+           
+        </div>
+        <div id="goose-hid" class="container hidden">
+            <button id="gclose" class="close">X</button>
+            <h2> Delicious Goose </h2>
+            <p>1 cup honey</p>
+            <p>1 cup white vinegar</p>
+            <p>Enough water to cover the goose</p>
+            <p>One 10 to 12 pound fresh goose</p>
+            <p>2 tablespoons salt</p>
+            <p>2 tablespoons freshly ground black pepper</p>
+            <p>2 bay leaves</p>
+            <p>2 tablespoons dried thyme</p>
+            <p>2 tablespoons dried rosemary</p>
+            <p>4 cloves garlic</p>
+            <p>1 small onion</p>
+            <p>2 tablespoons olive oil</p>
+            <p>1/2 cup flour</p>
+            <p>3 cups chicken stock</p>
+
+
+        </div>
+        <div id="bison-hid" class="container hidden">
+            <button id="bclose" class="close">X</button>
+            <h2> Delicious Bison </h2>
+            <p>30 lbs TenderBison Ribs</p>
+            <p>½ cup onions, chopped</p>
+            <p>1 tsp margarine</p>
+            <p>½ tsp pepper</p>
+            <p>4 tsp sugar</p>
+            <p>1 tsp dry mustard</p>
+            <p>4 tsp worcestershire sauce</p>
+            <p>¼ cup white vinegar</p>
+            <p>1 tsp salt</p>
+            <p>1 tsp paprika</p>
+            <p>½ cup ketchup</p>
+            <p>¼ cup water</p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

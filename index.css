@@ -1,0 +1,137 @@
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    color: var(--dark-green);
+    background: url(img/food.jpg);
+    background-size: cover;
+    font-family: 'Mountains of Christmas', cursive;
+    font-weight: bold;
+}
+
+h1,
+h2 { 
+    margin: 0;
+    text-align: center;
+    color: var(--bright-red);
+    border-bottom: 2px dashed;
+}
+
+form input,
+form button,
+.result {
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 5px;
+    border: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 12em;
+    justify-content: space-around;
+}
+
+
+form * {
+   padding: .5em;
+   font-size: 1.3rem
+}
+
+label {
+    padding: 0;
+}
+
+input { 
+    background: var(--snow);
+    color: var(--dark-green);
+}
+
+.veggie {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.veggie > input {
+    margin-right: 10px;
+}
+
+.result {
+    color: var(--wine-red);
+    min-width: 100%;
+    max-width: 5ch;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: var(--snow);
+    padding: 1em;
+    font-size: 1.5rem;
+}
+
+.result span {
+    color: var(--dark-green);
+    font-weight: 900
+}
+
+button {
+    color: var(--snow);
+    background: var(--dark-green);
+    margin-bottom: 20px;
+    transition: all .2s ease-in-out;
+}
+
+button:hover,
+button:focus {
+    transform: scale(.9);
+    cursor: pointer;  
+    outline: none;
+    box-shadow: 0 4px 10px -4px var(--bright-red);
+}
+.close {
+    background: var(--snow);
+    color: var(--bright-red);
+    border: 2px dashed var(--bright-red);
+    font-weight: bold;
+    font-size: 20px;
+}
+.play-jingle {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 2px 20px var(--dark-green);
+    padding: 40px;
+    margin: 0;
+    min-width: 340px;
+    max-width: 25%; 
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+}
